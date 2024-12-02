@@ -15,18 +15,18 @@ applications:
         - name: jenkins
           kind: ServiceAccount
           role: admin
-          namespace: TEAM_NAME-ci-cd
+          namespace: spocs-ci-cd
       namespaces:
-        - name: TEAM_NAME-ci-cd
+        - name: spocs-ci-cd
           bindings: *binds
           operatorgroup: true
-        - name: TEAM_NAME-dev
+        - name: spocs-dev
           bindings: *binds
           operatorgroup: true
-        - name: TEAM_NAME-test
+        - name: spocs-test
           bindings: *binds
           operatorgroup: true
-        - name: TEAM_NAME-stage
+        - name: spocs-stage
           bindings: *binds
           operatorgroup: true
 
