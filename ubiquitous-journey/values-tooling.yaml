@@ -61,6 +61,8 @@ applications:
             value: ''
           - name: GITLAB_GROUP_NAME
             value: ''
+          - name: BISCUITS
+            value: 'jaffa-cakes🍪'
           - name: GIT_SSL_NO_VERIFY
             value: "true"
           - name: JAVA_ARGS
