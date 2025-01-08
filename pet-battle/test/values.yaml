@@ -14,7 +14,6 @@ applications:
     source_path: keycloak
     values:
       app_domain: api.cluster-n627x.n627x.sandbox2586.opentlc.com:6443
-
   # Pet Battle Apps
     # Pet Battle Apps
   pet-battle-api:
@@ -28,7 +27,6 @@ applications:
       image_version: latest # container image version
       hpa:
         enabled: false
-
   pet-battle:
     name: pet-battle
     enabled: true
