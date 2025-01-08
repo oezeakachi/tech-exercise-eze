@@ -36,4 +36,3 @@ applications:
     source_ref: 1.0.6 # helm chart version
     values:
       image_version: latest # container image version
-
