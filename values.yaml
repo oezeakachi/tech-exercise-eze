@@ -7,7 +7,7 @@ release: ci-cd
 applications:
   # Tooling to support CI/CD
   - name: ubiquitous-journey
-    enabled: false
+    enabled: true
     source_path: "."
     helm_values:
       - ubiquitous-journey/values-tooling.yaml
