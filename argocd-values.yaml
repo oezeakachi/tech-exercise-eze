@@ -1,15 +1,4 @@
 ignoreHelmHooks: true
 operator: []
 namespaces:
-  - spocs-ci-cd
-argocd_cr:
-  initialRepositories: |
-    - url: https://github.com/oezeakachi/tech-exercise-eze/spocs/tech-exercise.git
-      type: git
-      passwordSecret:
-        key: password
-        name: git-auth
-      usernameSecret:
-        key: username
-        name: git-auth
-      insecure: true
+  - obi-ci-cd

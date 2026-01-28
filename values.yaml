@@ -1,7 +1,7 @@
 # change source and team
 # source: https://github.com/rht-labs/tech-exercise.git
 source: "https://github.com/oezeakachi/tech-exercise-eze.git"
-team: spocs
+team: obi
 release: ci-cd
 
 applications:
