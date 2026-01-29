@@ -1,6 +1,9 @@
 release: "stage"
 source: "http://nexus:8081/repository/helm-charts/"
 
+release: "stage"
+source: "http://nexus:8081/repository/helm-charts/"
+
 ##############
 # Argo Apps declaration
 #############
@@ -28,15 +31,10 @@ applications:
       image_version: latest # container image version
       hpa:
         enabled: false
-      # FIX: MongoDB 7.0 to resolve wire protocol v6 incompatibility
-      # Fixes: MongoIncompatibleDriverException - Server wire version 6
+      # DISABLE the MongoDB subchart - Helm chart image override doesn't work
+      # pet-battle-api will connect to external MongoDB at pet-battle-api-mongodb:27017
       mongodb:
-        enabled: true
-        image:
-          repository: mongo
-          tag: "7.0"
-        auth:
-          enabled: false
+        enabled: false
   pet-battle:
     name: pet-battle
     enabled: true
