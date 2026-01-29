@@ -28,6 +28,15 @@ applications:
       image_version: latest # container image version
       hpa:
         enabled: false
+      # FIX: MongoDB 7.0 to resolve wire protocol v6 incompatibility
+      # Fixes: MongoIncompatibleDriverException - Server wire version 6
+      mongodb:
+        enabled: true
+        image:
+          repository: mongo
+          tag: "7.0"
+        auth:
+          enabled: false
   pet-battle:
     name: pet-battle
     enabled: true
